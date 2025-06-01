@@ -1,0 +1,192 @@
+@layer components {
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    width: auto;
+    background-color: var(--color-ui);
+    color: var(--color-ui-contrast);
+    border-radius: var(--border-radius);
+    border-width: var(--border-width);
+    border-color: var(--border-color);
+    height: var(--height-ui);
+    padding: var(--padding-ui);
+    gap: var(--gap-ui);
+    font-size: var(--font-size);
+    transition: background-color 0.2s;
+  }
+
+  .button:hover {
+    background-color: var(--color-ui-1);
+    color: var(--color-ui-contrast-1);
+  }
+
+  .button:focus-visible {
+    outline: none;
+    box-shadow:
+      inset 0 0 0 1px var(--color-ui-contrast-1);
+  }
+
+  .button:active {
+    background-color: var(--color-ui-2);
+    color: var(--color-ui-contrast-1);
+  }
+
+  .button:disabled,
+  .button[data-disabled]  {
+    opacity: 0.6;
+    pointer-events: none;
+    box-shadow: none;
+  }
+
+  .button .button__icon {
+    height: 1em;
+    width: 1em;
+    display: inline-flex;
+    align-self: center;
+    color: currentColor;
+  }
+
+  [dir="rtl"] .button .button__icon {
+    transform: scaleX(-1);
+  }
+
+  .button--square,
+  .button--circle {
+    aspect-ratio: 1/1;
+    width: auto;
+  }
+
+  .button--circle {
+    border-radius: var(--border-radius-full);
+  }
+
+  .button--square:has(.button__icon),
+  .button--circle:has(.button__icon) {
+    padding: 0;
+  }
+
+  .button--sm {
+    height: var(--height-ui-sm);
+    font-size: var(--font-size-sm);
+    padding: var(--padding-ui-sm);
+    gap: var(--gap-ui-sm);
+  }
+
+  .button--lg {
+    height: var(--height-ui-lg);
+    font-size: var(--font-size-lg);
+    padding: var(--padding-ui-lg);
+    gap: var(--gap-ui-lg);
+  }
+
+  .button--xl {
+    height: var(--height-ui-xl);
+    font-size: var(--font-size-xl);
+    padding: var(--padding-ui-xl);
+    gap: var(--gap-ui-xl);
+  }
+
+  .button--brand {
+    background-color: var(--color-ui-brand);
+  }
+
+  .button--brand:hover {
+    background-color: var(--color-ui-brand-1);
+  }
+
+  .button--brand:active {
+    background-color: var(--color-ui-brand-2);
+  }
+
+  .button--alert {
+    background-color: var(--color-ui-alert);
+  }
+
+  .button--alert:hover {
+    background-color: var(--color-ui-alert-1);
+  }
+
+  .button--alert:active {
+    background-color: var(--color-ui-alert-2);
+  }
+
+  .button--accent {
+    background-color: var(--color-accent);
+    color: var(--color-accent-contrast);
+  }
+
+  .button--accent:hover {
+    background-color: var(--color-accent-1);
+    color: var(--color-accent-contrast);
+  }
+
+  .button--accent:active {
+    background-color: var(--color-accent-2);
+    color: var(--color-accent-contrast);
+  }
+
+  .button--accent:focus-visible {
+    outline: none;
+    box-shadow:
+      inset 0 0 0 2px var(--color-accent-contrast-1);
+  }
+
+  .button--accent.button--brand {
+    background-color: var(--color-accent-brand);
+  }
+
+  .button--accent.button--brand:hover {
+    background-color: var(--color-accent-brand-1);
+  }
+
+  .button--accent.button--brand:active {
+    background-color: var(--color-accent-brand-2);
+  }
+
+  .button--accent.button--alert {
+    background-color: var(--color-accent-alert);
+  }
+
+  .button--accent.button--alert:hover {
+    background-color: var(--color-accent-alert-1);
+  }
+
+  .button--accent.button--alert:active {
+    background-color: var(--color-accent-alert-2);
+  }
+
+  .button--font-brand {
+    color: var(--color-ui-contrast-brand);
+  }
+
+  .button--font-brand:hover {
+    color: var(--color-ui-contrast-brand);
+  }
+
+  .button--font-brand:active {
+    color: var(--color-ui-contrast-brand);
+  }
+
+  .button--font-alert {
+    color: var(--color-ui-contrast-alert);
+  }
+
+  .button--font-alert:hover {
+    color: var(--color-ui-contrast-alert);
+  }
+
+  .button--font-alert:active {
+    color: var(--color-ui-contrast-alert);
+  }
+
+  .button--accent.button--font-brand {
+    color: var(--color-accent-contrast-brand);
+  }
+
+  .button--accent.button--font-alert {
+    color: var(--color-accent-contrast-alert);
+  }
+}

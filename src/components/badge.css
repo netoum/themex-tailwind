@@ -1,0 +1,102 @@
+@layer components {
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    background-color: var(--color-ui);
+    color: var(--color-ui-contrast);
+    border-radius: var(--border-radius);
+    height: var(--height-ui);
+    padding: var(--padding-ui);
+    gap: var(--gap-ui);
+    font-size: var(--font-size);
+    transition: background-color 0.2s;
+  }
+
+  .badge .badge__icon {
+    height: 1em;
+    width: 1em;
+    display: inline-flex;
+    align-self: center;
+    color: currentColor;
+  }
+
+  [dir="rtl"] .badge .badge__icon {
+    transform: scaleX(-1);
+  }
+
+  .badge--square,
+  .badge--circle {
+    aspect-ratio: 1/1;
+    width: auto;
+  }
+
+  .badge--circle {
+    border-radius: var(--border-radius-full);
+  }
+
+  .badge--square:has(.badge__icon),
+  .badge--circle:has(.badge__icon) {
+    padding: 0;
+  }
+
+  .badge--sm {
+    height: var(--height-ui-sm);
+    font-size: var(--font-size-sm);
+    padding: var(--padding-ui-sm);
+    gap: var(--gap-ui-sm);
+  }
+
+  .badge--lg {
+    height: var(--height-ui-lg);
+    font-size: var(--font-size-lg);
+    padding: var(--padding-ui-lg);
+    gap: var(--gap-ui-lg);
+  }
+
+  .badge--xl {
+    height: var(--height-ui-xl);
+    font-size: var(--font-size-xl);
+    padding: var(--padding-ui-xl);
+    gap: var(--gap-ui-xl);
+  }
+
+  .badge--brand {
+    background-color: var(--color-ui-brand);
+  }
+
+  .badge--alert {
+    background-color: var(--color-ui-alert);
+  }
+
+  .badge--accent {
+    background-color: var(--color-accent);
+    color: var(--color-accent-contrast);
+  }
+
+  .badge--accent.badge--brand {
+    background-color: var(--color-accent-brand);
+  }
+
+  .badge--accent.badge--alert {
+    background-color: var(--color-accent-alert);
+  }
+
+  .badge--font-brand {
+    color: var(--color-ui-contrast-brand);
+  }
+
+  .badge--font-alert {
+    color: var(--color-ui-contrast-alert);
+  }
+
+  .badge--accent.badge--font-brand {
+    color: var(--color-accent-contrast-brand);
+  }
+
+  .badge--accent.badge--font-alert {
+    color: var(--color-accent-contrast-alert);
+  }
+}

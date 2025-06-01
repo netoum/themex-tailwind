@@ -1,0 +1,23 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@theme inline {
+  --ratio-xs: 0.8;
+  --ratio-sm: 0.9;
+  --ratio-lg: 1.2;
+  --ratio-xl: 1.4;
+  --height-ui: var(--theme-height-ui);
+  --height-ui-sm: var(--theme-height-ui-sm);
+  --height-ui-lg: var(--theme-height-ui-lg);
+  --height-ui-xl: var(--theme-height-ui-xl);
+  --padding-ui: var(--theme-padding-ui);
+  --padding-ui-sm: var(--theme-padding-ui-sm);
+  --padding-ui-lg: var(--theme-padding-ui-lg);
+  --padding-ui-xl: var(--theme-padding-ui-xl);
+  --margin-ui: var(--theme-margin-ui);
+  --gap-ui: var(--theme-gap-ui);
+  --gap-ui-sm: var(--theme-gap-ui-sm);
+  --gap-ui-lg: var(--theme-gap-ui-lg);
+  --gap-ui-xl: var(--theme-gap-ui-xl);
+}

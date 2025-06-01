@@ -1,0 +1,168 @@
+{
+  "theme": {
+    "color": {
+      "base": {
+        "1": {
+          "value": "{color.dark.stone.1}",
+          "type": "color"
+        },
+        "2": {
+          "value": "{color.dark.stone.2}",
+          "type": "color"
+        },
+        "3": {
+          "value": "{color.dark.stone.3}",
+          "type": "color"
+        },
+        "4": {
+          "value": "{color.dark.stone.4}",
+          "type": "color"
+        },
+        "5": {
+          "value": "{color.dark.stone.5}",
+          "type": "color"
+        },
+        "6": {
+          "value": "{color.dark.stone.6}",
+          "type": "color"
+        },
+        "7": {
+          "value": "{color.dark.stone.7}",
+          "type": "color"
+        },
+        "8": {
+          "value": "{color.dark.stone.8}",
+          "type": "color"
+        },
+        "9": {
+          "value": "{color.dark.stone.9}",
+          "type": "color"
+        },
+        "10": {
+          "value": "{color.dark.stone.10}",
+          "type": "color"
+        },
+        "11": {
+          "value": "{color.dark.stone.11}",
+          "type": "color"
+        },
+        "12": {
+          "value": "{color.dark.stone.12}",
+          "type": "color"
+        },
+        "13": {
+          "value": "{color.dark.stone.13}",
+          "type": "color"
+        }
+      },
+      "alert": {
+        "1": {
+          "value": "{color.pastel.dark.red.1}",
+          "type": "color"
+        },
+        "2": {
+          "value": "{color.pastel.dark.red.2}",
+          "type": "color"
+        },
+        "3": {
+          "value": "{color.pastel.dark.red.3}",
+          "type": "color"
+        },
+        "4": {
+          "value": "{color.pastel.dark.red.4}",
+          "type": "color"
+        },
+        "5": {
+          "value": "{color.pastel.dark.red.5}",
+          "type": "color"
+        },
+        "6": {
+          "value": "{color.pastel.dark.red.6}",
+          "type": "color"
+        },
+        "7": {
+          "value": "{color.pastel.dark.red.7}",
+          "type": "color"
+        },
+        "8": {
+          "value": "{color.pastel.dark.red.8}",
+          "type": "color"
+        },
+        "9": {
+          "value": "{color.pastel.dark.red.9}",
+          "type": "color"
+        },
+        "10": {
+          "value": "{color.pastel.dark.red.10}",
+          "type": "color"
+        },
+        "11": {
+          "value": "{color.pastel.dark.red.11}",
+          "type": "color"
+        },
+        "12": {
+          "value": "{color.pastel.dark.red.12}",
+          "type": "color"
+        },
+        "13": {
+          "value": "{color.pastel.dark.red.13}",
+          "type": "color"
+        }
+      },
+      "brand": {
+        "1": {
+          "value": "{color.pastel.dark.violet.1}",
+          "type": "color"
+        },
+        "2": {
+          "value": "{color.pastel.dark.violet.2}",
+          "type": "color"
+        },
+        "3": {
+          "value": "{color.pastel.dark.violet.3}",
+          "type": "color"
+        },
+        "4": {
+          "value": "{color.pastel.dark.violet.4}",
+          "type": "color"
+        },
+        "5": {
+          "value": "{color.pastel.dark.violet.5}",
+          "type": "color"
+        },
+        "6": {
+          "value": "{color.pastel.dark.violet.6}",
+          "type": "color"
+        },
+        "7": {
+          "value": "{color.pastel.dark.violet.7}",
+          "type": "color"
+        },
+        "8": {
+          "value": "{color.pastel.dark.violet.8}",
+          "type": "color"
+        },
+        "9": {
+          "value": "{color.pastel.dark.violet.9}",
+          "type": "color"
+        },
+        "10": {
+          "value": "{color.pastel.dark.violet.10}",
+          "type": "color"
+        },
+        "11": {
+          "value": "{color.pastel.dark.violet.11}",
+          "type": "color"
+        },
+        "12": {
+          "value": "{color.pastel.dark.violet.12}",
+          "type": "color"
+        },
+        "13": {
+          "value": "{color.pastel.dark.violet.13}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@layer components {
+  .collapsible [data-scope="collapsible"][data-part="root"] {
+    gap: var(--gap-ui);
+    padding: var(--padding-ui);
+    align-items: start;
+    width: 100%;
+  }
+
+  .collapsible [data-scope="collapsible"][data-part="content"][data-disabled] {
+    opacity: 0.6;
+    pointer-events: none;
+    box-shadow: none;
+  }
+
+  .collapsible [data-scope="collapsible"][data-part="trigger"][data-disabled] {
+    opacity: 0.6;
+    pointer-events: none;
+    box-shadow: none;
+  }
+
+  .collapsible [data-scope="collapsible"][data-part="content"] {
+    background-color: var(--color-layer-2);
+    color: var(--color-contrast);
+    border-radius: var(--border-radius);
+    border-width: var(--border-width);
+    border-color: var(--border-color);
+    padding: var(--padding-ui);
+    gap: var(--gap-ui);
+    margin-block: var(--margin-ui);
+  }
+
+  .collapsible [data-scope="collapsible"][data-part="content"][data-state="open"] {
+    animation: slideDown 200ms ease;
+  }
+
+  .collapsible [data-scope="collapsible"][data-part="content"][data-state="closed"] {
+    animation: slideUp 200ms ease;
+  }
+
+  .collapsible [data-scope="collapsible"][data-part="trigger"][data-state="open"] .trigger__open {
+    display: none;
+  }
+
+  .collapsible [data-scope="collapsible"][data-part="trigger"][data-state="closed"] .trigger__open {
+    display: inline-flex;
+  }
+
+  .collapsible [data-scope="collapsible"][data-part="trigger"][data-state="open"] .trigger__closed {
+    display: inline-flex;
+  }
+
+  [data-scope="collapsible"][data-part="trigger"][data-state="closed"] .trigger__closed {
+    display: none;
+  }
+
+  [data-scope="collapsible"][data-part="indicator"][data-state="open"] {
+    transform: rotate(90deg);
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0.01;
+      height: 0;
+    }
+
+    to {
+      opacity: 1;
+      height: var(--height);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 1;
+      height: var(--height);
+    }
+
+    to {
+      opacity: 0.01;
+      height: 0;
+    }
+  }
+}

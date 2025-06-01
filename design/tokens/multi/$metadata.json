@@ -1,0 +1,21 @@
+{
+  "tokenSetOrder": [
+    "global/border",
+    "global/font",
+    "global/dimension",
+    "global/color",
+    "semantic/color",
+    "semantic/border",
+    "semantic/font",
+    "semantic/dimension",
+    "theme/neo",
+    "theme/revo",
+    "theme/uno",
+    "theme/neo/light",
+    "theme/neo/dark",
+    "theme/revo/light",
+    "theme/revo/dark",
+    "theme/uno/light",
+    "theme/uno/dark"
+  ]
+}

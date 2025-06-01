@@ -1,0 +1,69 @@
+{
+  "name": "@netoum/themex-tailwind",
+  "version": "0.0.1",
+  "description": "The Corex Themex template for Tailwind. Provides global design tokens and Corex component styles.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/style.css",
+  "unpkg": "./dist/style.css",
+  "jsdelivr": "./dist/style.css",
+  "exports": {
+    ".": {
+      "default": "./dist/style.css"
+    },
+    "./style.min.css": {
+      "default": "./dist/style.min.css"
+    },
+    
+    "./tokens/global/*.css": {
+      "default": "./dist/tokens/global/*.css"
+    },
+    "./tokens/global/*.min.css": {
+      "default": "./dist/tokens/global/*.min.css"
+    },
+
+    "./tokens/semantic/*.css": {
+      "default": "./dist/tokens/semantic/*.css"
+    },
+    "./tokens/semantic/*.min.css": {
+      "default": "./dist/tokens/semantic/*.min.css"
+    },
+
+    "./tokens/theme/*.css": {
+      "default": "./dist/tokens/theme/*.css"
+    },
+    "./tokens/theme/*.min.css": {
+      "default": "./dist/tokens/theme/*.min.css"
+    },
+
+    "./components/*.css": {
+      "default": "./dist/components/*.css"
+    },
+    "./components/*.min.css": {
+      "default": "./dist/components/*.min.css"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/netoum/themex-tailwind.git"
+  },
+  "author": "Netoum <info@netoum.com> (https://www.netoum.com)",
+  "files": [
+    "README.md",
+    "CHANGELOG.md",
+    "package.json",
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "npx designex build --script=design/build.mjs && node build.mjs",
+    "build:from:css": "node build.mjs"
+  },
+  "devDependencies": {
+    "@netoum/designex": "^1.0.2",
+    "@tokens-studio/sd-transforms": "^1.2.9",
+    "style-dictionary": "^4.3.0",
+    "turbo": "^2.5.0",
+    "fs-extra": "^11.3.0"
+
+  }
+}

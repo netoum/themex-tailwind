@@ -1,0 +1,58 @@
+@layer components {
+  .dialog [data-scope="dialog"][data-part="backdrop"] {
+    z-index: 30;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-layer-1);
+    opacity: 90%;
+  }
+
+  .dialog [data-scope="dialog"][data-part="positioner"] {
+    z-index: 40;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dialog [data-scope="dialog"][data-part="content"] {
+    z-index: 50;
+    position: relative;
+    background-color: var(--color-layer-2);
+    color: var(--color-contrast);
+    border-radius: var(--border-radius);
+    border-width: var(--border-width);
+    border-color: var(--border-color);
+    padding: var(--padding-ui);
+    gap: var(--gap-ui);
+  }
+
+  .dialog [data-scope="dialog"][data-part="content"] {
+    [data-scope="dialog"][data-part="title"] {
+      margin-block: var(--margin-ui);
+    }
+  }
+
+  .dialog [data-scope="dialog"][data-part="description"] {
+    [data-scope="dialog"][data-part="title"] {
+      margin-block: var(--margin-ui);
+    }
+  }
+
+  .dialog [data-scope="dialog"][data-part="close-trigger"] {
+    position: absolute;
+    top: var(--padding-ui);
+    right: var(--padding-ui);
+  }
+
+  .dialog [dir="rtl"] [data-scope="dialog"][data-part="close-trigger"] {
+    top: var(--padding-ui);
+    right: auto;
+    left: var(--margin-ui);
+  }
+}

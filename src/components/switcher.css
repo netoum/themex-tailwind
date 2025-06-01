@@ -1,0 +1,147 @@
+@layer components {
+  .switcher [data-scope="toggle-group"][data-part="root"] {
+    display: inline-flex;
+  }
+
+  .switcher [data-scope="toggle-group"][data-part="root"][data-orientation="horizontal"] {
+    flex-direction: row;
+  }
+
+  .switcher [data-scope="toggle-group"][data-part="root"][data-orientation="vertical"] {
+    flex-direction: column;
+  }
+
+  .switcher [data-scope="toggle-group"][data-part="item"] {
+    border-radius: 0;
+  }
+
+  .switcher [data-scope="toggle-group"][data-part="item"]:first-child {
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+  }
+
+  .switcher [data-scope="toggle-group"][data-part="item"]:last-child {
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  }
+
+  .switcher [data-scope="toggle-group"][data-part="item"][dir="rtl"]:first-child {
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  }
+
+  .switcher [data-scope="toggle-group"][data-part="item"][dir="rtl"]:last-child {
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+  }
+
+  .switcher [data-scope="toggle-group"][data-part="item"] {
+    display: inline-flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    width: auto;
+    background-color: var(--color-ui);
+    color: var(--color-ui-contrast);
+    border-width: var(--border-width);
+    border-color: var(--border-color);
+    height: var(--height-ui);
+    padding: var(--padding-ui);
+    gap: var(--gap-ui);
+    font-size: var(--font-size);
+    transition: background-color 0.2s;
+  }
+
+  .switcher [data-scope="toggle-group"][data-part="item"] .item__icon {
+    height: 1em;
+    width: 1em;
+    display: inline-flex;
+    align-self: center;
+    color: currentColor;
+  }
+
+  [dir="rtl"] .switcher [data-scope="toggle-group"][data-part="item"] .item__icon {
+    transform: scaleX(-1);
+  }
+
+  .switcher [data-scope="toggle-group"][data-orientation="vertical"] {
+    [data-part="item"]:first-child {
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+
+    [data-part="item"]:last-child {
+      border-radius: 0 0 var(--border-radius) var(--border-radius);
+    }
+
+    [data-part="item"][dir="rtl"]:first-child {
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+
+    [data-part="item"][dir="rtl"]:last-child {
+      border-radius: 0 0 var(--border-radius) var(--border-radius);
+    }
+  }
+
+  .switcher [data-scope="toggle-group"][data-part="item"]:hover {
+    background-color: var(--color-ui-1);
+    color: var(--color-ui-contrast);
+  }
+
+  .switcher [data-scope="toggle-group"][data-part="item"]:active {
+    background-color: var(--color-ui-2);
+    color: var(--color-ui-contrast);
+  }
+
+  .switcher [data-scope="toggle-group"][data-part="item"]:focus-visible {
+    outline: none;
+    box-shadow: inset 0 0 0 2px var(--color-contrast-4);
+    background-color: var(--color-ui-1);
+    color: var(--color-ui-contrast);
+  }
+
+  .switcher [data-scope="toggle-group"][data-part="item"][data-state="on"] {
+    background-color: var(--color-accent);
+    color: var(--color-accent-contrast);
+  }
+
+  .switcher [data-scope="toggle-group"][data-part="item"][data-state="on"]:hover {
+    background-color: var(--color-accent-1);
+  }
+
+  .switcher [data-scope="toggle-group"][data-part="item"][data-state="on"]:active {
+    background-color: var(--color-accent-2);
+  }
+
+  .switcher [data-scope="toggle-group"][data-part="item"][data-state="on"]:focus-visible {
+    outline: none;
+    box-shadow: inset 0 0 0 2px var(--color-accent-contrast-1);
+  }
+
+  .switcher [data-scope="toggle-group"][data-part="item"][data-disabled] {
+    opacity: 0.6;
+    pointer-events: none;
+    box-shadow: none;
+  }
+
+  .switcher--duo [data-scope="toggle-group"][data-part="item"][data-state="on"] {
+    display: none;
+  }
+
+  .switcher.switcher--square,
+  .switcher.switcher--circle {
+    aspect-ratio: 1/1;
+    width: var(--height-ui);
+    height: var(--height-ui);
+    padding: 0;
+  }
+
+  .switcher.switcher--square:has(.item__icon),
+  .switcher.switcher--circle:has(.item__icon) {
+    padding: 0;
+  }
+
+  .switcher.switcher--circle [data-scope="toggle-group"][data-part="item"] {
+    border-radius: var(--border-radius-full);
+    padding: 0;
+    aspect-ratio: 1/1;
+    width: auto;
+  }
+}

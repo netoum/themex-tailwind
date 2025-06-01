@@ -1,0 +1,86 @@
+@layer components {
+  .tree-view [data-scope="tree-view"][data-part="root"] {
+    width: auto;
+    height: 100%;
+  }
+  .tree-view [data-scope="tree-view"][data-part="tree"] {
+    width: 100%;
+    padding: var(--padding-ui);
+    border-radius: var(--border-radius);
+    background: var(--color-layer-2);
+  }
+  .tree-view [data-scope="tree-view"][data-part="item"],
+  [data-scope="tree-view"][data-part="branch-control"] {
+    user-select: none;
+    padding: var(--padding-ui);
+    display: flex;
+    align-items: center;
+    gap: var(--gap-ui);
+    padding: var(--padding-ui);
+    border-radius: var(--border-radius);
+    border-width: var(--border-width);
+    border-color: var(--border-color);
+    height: var(--height-ui);
+    margin: var(--margin-ui);
+    color: var(--color-ui-contrast);
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    margin-inline-end: calc(var(--depth) * var(--margin-ui));
+  }
+  .tree-view [data-scope="tree-view"][data-part="branch"] {
+    margin-inline-start: var(--margin-ui);
+  }
+  .tree-view [data-scope="tree-view"][data-part="branch-indicator"],
+  .tree-view [data-scope="tree-view"][data-part="branch-control"] svg {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+    font-size: var(--font-size);
+    color: var(--color-ui-contrast);
+    height: 1em;
+    width: 1em;
+    flex-shrink: 0;
+  }
+  [dir="rtl"] .tree-view [data-scope="tree-view"][data-part="branch-indicator"] {
+    transform: scaleX(-1);
+  }
+  .tree-view [data-scope="tree-view"][data-part="item"]:hover,
+  .tree-view [data-scope="tree-view"][data-part="branch-control"]:hover {
+    background: var(--color-ui-1);
+  }
+  .tree-view [data-scope="tree-view"][data-part="item"][data-selected],
+  .tree-view [data-scope="tree-view"][data-part="branch-control"][data-selected] {
+    background: var(--color-ui-1);
+  }
+  .tree-view [data-scope="tree-view"][data-part="item"]:focus-visible,
+  .tree-view [data-scope="tree-view"][data-part="branch-control"]:focus-visible {
+    outline: none;
+    box-shadow:
+      inset 0 0 0 2px var(--color-ui-contrast-1);
+  }
+  .tree-view [data-scope="tree-view"][data-part="item-text"],
+  .tree-view [data-scope="tree-view"][data-part="branch-text"] {
+    flex: 1;
+    color: var(--color-ui-contrast-1);
+  }
+  .tree-view [data-scope="tree-view"][data-part="branch-content"] {
+    position: relative;
+    isolation: isolate;
+  }
+  .tree-view [data-scope="tree-view"][data-part="branch-indent-guide"] {
+    position: absolute;
+    content: "";
+    border-left: 2px solid var(--border-color);
+    height: 100%;
+  }
+  .tree-view [data-scope="tree-view"][data-part="branch-indicator"] {
+    display: flex;
+    align-items: center;
+  }
+  .tree-view [data-scope="tree-view"][data-part="branch-indicator"] svg {
+    transition: transform 0.2s ease;
+  }
+  .tree-view [data-scope="tree-view"][data-part="branch-indicator"][data-state="open"] svg {
+    transform: rotate(90deg);
+  }
+}

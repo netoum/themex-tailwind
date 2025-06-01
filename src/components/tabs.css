@@ -1,0 +1,245 @@
+@layer components {
+  .tabs [data-scope="tabs"][data-part="root"] {
+    display: flex;
+  }
+  .tabs [data-scope="tabs"][data-part="list"] {
+    display: inline-flex;
+  }
+  .tabs [data-scope="tabs"][data-part="root"][data-orientation="horizontal"] {
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+  }
+  .tabs [data-scope="tabs"][data-part="root"][data-orientation="vertical"] {
+    flex-direction: row;
+    display: flex;
+  }
+  .tabs [data-scope="tabs"][data-part="list"][data-orientation="horizontal"] {
+    flex-direction: row;
+  }
+  .tabs [data-scope="tabs"][data-part="list"][data-orientation="vertical"] {
+    flex-direction: column;
+  }
+  .tabs [data-scope="tabs"][data-part="content"] {
+    flex: 1;
+    display: inline-block;
+  }
+  .tabs [data-scope="tabs"][data-part="content"] {
+    padding: var(--padding-ui);
+    border-end-end-radius: var(--border-radius);
+    border-start-end-radius: var(--border-radius);
+    border-width: var(--border-width);
+    border-color: var(--border-color);
+  }
+  .tabs [data-scope="tabs"][data-part="trigger"] {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: auto;
+    color: var(--color-ui-contrast);
+    height: var(--height-ui);
+    padding: var(--padding-ui);
+    gap: var(--gap-ui);
+    font-size: var(--font-size);
+    line-height: 1;
+    transition: background-color 0.2s;
+    appearance: button;
+    box-sizing: border-box;
+    vertical-align: middle;
+  }
+  .tabs [data-scope="tabs"][data-part="trigger"] .trigger__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 1em;
+    width: 1em;
+    flex-shrink: 0;
+    color: currentColor;
+  }
+  [dir="rtl"] .tabs [data-scope="tabs"][data-part="trigger"] .trigger__icon {
+    transform: scaleX(-1);
+  }
+  .tabs [data-scope="tabs"][data-part="trigger"]:hover {
+    background-color: var(--color-ui-1);
+    color: var(--color-ui-contrast-1);
+  }
+  .tabs [data-scope="tabs"][data-part="trigger"]:focus-visible {
+    outline: none;
+    box-shadow:
+      inset 0 0 0 2px var(--color-ui-contrast-1);
+  }
+  .tabs [data-scope="tabs"][data-part="trigger"]:active {
+    background-color: var(--color-ui-2);
+  }
+  .tabs [data-scope="tabs"][data-part="trigger"]:disabled,
+  .tabs [data-scope="tabs"][data-part="trigger"][data-disabled]  {
+    opacity: 0.6;
+    pointer-events: none;
+    box-shadow: none;
+  }
+  .tabs [data-scope="tabs"][data-part="trigger"] {
+    border-radius: 0 0 0 0;
+  }
+  .tabs [data-scope="tabs"][data-part="trigger"]:first-child {
+    border-radius: var(--border-radius) 0 0 0;
+  }
+  .tabs [data-scope="tabs"][data-part="trigger"]:last-child {
+    border-radius: 0 var(--border-radius) 0 0;
+  }
+  .tabs [data-scope="tabs"][data-part="trigger"][data-orientation="vertical"]:last-child {
+    border-radius: 0 0 0 var(--border-radius);
+  }
+  .tabs [data-scope="tabs"][data-part="trigger"][dir="rtl"]:first-child {
+    border-radius: 0 var(--border-radius) 0 0;
+  }
+  .tabs [data-scope="tabs"][data-part="trigger"][dir="rtl"]:last-child {
+    border-radius: var(--border-radius) 0 0 0;
+  }
+  .tabs [data-scope="tabs"][data-part="trigger"][data-orientation="vertical"][dir="rtl"]:last-child {
+    border-radius: 0 0 var(--border-radius) 0;
+  }
+  .tabs [data-scope="tabs"][data-part="trigger"][data-selected] {
+    background-color: var(--color-ui);
+    color: var(--color-ui-contrast);
+    border-width: var(--border-width);
+    border-color: var(--border-color);
+    border-bottom: 0;
+  }
+  .tabs [data-scope="tabs"][data-part="trigger"][data-selected]:focus-visible {
+    outline: none;
+    box-shadow: inset 0 0 0 2px var(--color-ui-contrast-2);
+    background-color: var(--color-ui-1);
+    color: var(--color-ui-contrast);
+  }
+  .tabs [data-scope="tabs"][data-part="trigger"][data-selected]:hover {
+    background-color: var(--color-ui-1);
+    color: var(--color-ui-contrast);
+  }
+  .tabs [data-scope="tabs"][data-part="trigger"][data-selected]:active {
+    background-color: var(--color-ui-2);
+    color: var(--color-ui-contrast);
+  }
+  .tabs--accent [data-scope="tabs"][data-part="trigger"] {
+    background-color: var(--color-ui);
+    color: var(--color-ui-contrast-1);
+    border-radius: 0;
+    border-width: var(--border-width);
+    border-color: var(--border-color);
+    border-bottom: 0;
+  }
+  .tabs--accent [data-scope="tabs"][data-part="trigger"][data-selected] {
+    background-color: var(--color-accent);
+    color: var(--color-accent-contrast);
+  }
+  .tabs--accent [data-scope="tabs"][data-part="trigger"][data-selected]:focus-visible {
+    outline: none;
+    box-shadow: inset 0 0 0 2px var(--color-accent-contrast-2);
+    background-color: var(--color-accent-1);
+    color: var(--color-accent-contrast);
+  }
+  .tabs--accent [data-scope="tabs"][data-part="trigger"][data-selected]:hover {
+    background-color: var(--color-accent-1);
+    color: var(--color-accent-contrast);
+  }
+  .tabs--accent [data-scope="tabs"][data-part="trigger"][data-selected]:active {
+    background-color: var(--color-accent-2);
+    color: var(--color-accent-contrast);
+  }
+  .tabs--sm [data-scope="tabs"][data-part="trigger"] {
+    height: calc(var(--height-ui) * var(--ratio-sm));
+    font-size: calc(var(--font-size) * var(--ratio-sm));
+  }
+  .tabs--lg [data-scope="tabs"][data-part="trigger"] {
+    height: calc(var(--height-ui) * var(--ratio-lg));
+    font-size: calc(var(--font-size) * var(--ratio-lg));
+  }
+  .tabs--xl [data-scope="tabs"][data-part="trigger"] {
+    height: calc(var(--height-ui) * var(--ratio-xl));
+    font-size: calc(var(--font-size) * var(--ratio-xl));
+  }
+  .tabs--brand [data-scope="tabs"][data-part="trigger"]:hover {
+    background-color: var(--color-ui-brand-1);
+  }
+  .tabs--brand [data-scope="tabs"][data-part="trigger"]:active {
+    background-color: var(--color-ui-brand-2);
+  }
+  .tabs--brand [data-scope="tabs"][data-part="trigger"][data-selected] {
+    background-color: var(--color-ui-brand);
+    color: var(--color-ui-contrast);
+  }
+  .tabs--brand [data-scope="tabs"][data-part="trigger"][data-selected]:hover {
+    background-color: var(--color-ui-brand-1);
+    color: var(--color-ui-contrast);
+  }
+  .tabs--brand [data-scope="tabs"][data-part="trigger"][data-selected]:active {
+    background-color: var(--color-ui-brand-2);
+    color: var(--color-ui-contrast);
+  }
+  .tabs--brand.tabs--accent [data-scope="tabs"][data-part="trigger"] {
+    background-color: var(--color-ui-brand);
+  }
+  .tabs--brand.tabs--accent [data-scope="tabs"][data-part="trigger"]:hover {
+    background-color: var(--color-ui-brand-1);
+  }
+  .tabs--brand.tabs--accent [data-scope="tabs"][data-part="trigger"]:active {
+    background-color: var(--color-ui-brand-2);
+  }
+  .tabs--brand.tabs--accent [data-scope="tabs"][data-part="trigger"][data-selected] {
+    background-color: var(--color-accent-brand);
+    color: var(--color-accent-contrast);
+  }
+  .tabs--brand.tabs--accent [data-scope="tabs"][data-part="trigger"][data-selected]:hover {
+    background-color: var(--color-accent-brand-1);
+    color: var(--color-accent-contrast);
+  }
+  .tabs--brand.tabs--accent [data-scope="tabs"][data-part="trigger"][data-selected]:active {
+    background-color: var(--color-accent-brand-2);
+    color: var(--color-accent-contrast);
+  }
+  /* .tabs--alert [data-scope="tabs"][data-part="trigger"] {
+    background-color: var(--color-ui-alert);
+  } */
+  .tabs--alert [data-scope="tabs"][data-part="trigger"]:hover {
+    background-color: var(--color-ui-alert-1);
+  }
+  .tabs--alert [data-scope="tabs"][data-part="trigger"]:active {
+    background-color: var(--color-ui-alert-2);
+  }
+  .tabs--alert [data-scope="tabs"][data-part="trigger"][data-selected] {
+    background-color: var(--color-ui-alert-2);
+    color: var(--color-ui-contrast);
+  }
+  .tabs--alert [data-scope="tabs"][data-part="trigger"][data-selected]:hover {
+    background-color: var(--color-ui-alert-2);
+    color: var(--color-ui-contrast-1);
+  }
+  .tabs--alert [data-scope="tabs"][data-part="trigger"][data-selected]:active {
+    background-color: var(--color-ui-alert-2);
+    color: var(--color-ui-contrast-1);
+  }
+  .tabs--alert.tabs--accent [data-scope="tabs"][data-part="trigger"] {
+    background-color: var(--color-ui-alert);
+    color: var(--color-ui-contrast);
+  }
+  .tabs--alert.tabs--accent [data-scope="tabs"][data-part="trigger"]:hover {
+    background-color: var(--color-ui-alert-1);
+    color: var(--color-ui-contrast);
+  }
+  .tabs--alert.tabs--accent [data-scope="tabs"][data-part="trigger"]:active {
+    background-color: var(--color-ui-alert-2);
+    color: var(--color-ui-contrast);
+  }
+  .tabs--alert.tabs--accent [data-scope="tabs"][data-part="trigger"][data-selected] {
+    background-color: var(--color-accent-alert);
+    color: var(--color-accent-contrast);
+  }
+  .tabs--alert.tabs--accent [data-scope="tabs"][data-part="trigger"][data-selected]:hover {
+    background-color: var(--color-accent-alert-1);
+    color: var(--color-accent-contrast);
+  }
+  .tabs--alert.tabs--accent [data-scope="tabs"][data-part="trigger"][data-selected]:active {
+    background-color: var(--color-accent-alert-2);
+    color: var(--color-accent-contrast);
+  }
+}

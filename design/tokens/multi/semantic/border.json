@@ -1,0 +1,22 @@
+{
+  "border": {
+    "radius": {
+      "default": {
+        "value": "{theme.border.radius.default}",
+        "type": "borderRadius"
+      }
+    },
+    "width": {
+      "default": {
+        "value": "{theme.border.width.default}",
+        "type": "borderWidth"
+      }
+    },
+    "color": {
+      "default": {
+        "value": "{theme.border.color.default}",
+        "type": "color"
+      }
+    }
+  }
+}

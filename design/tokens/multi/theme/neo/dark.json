@@ -1,0 +1,168 @@
+{
+  "theme": {
+    "color": {
+      "base": {
+        "1": {
+          "value": "{color.dark.gray.1}",
+          "type": "color"
+        },
+        "2": {
+          "value": "{color.dark.gray.2}",
+          "type": "color"
+        },
+        "3": {
+          "value": "{color.dark.gray.3}",
+          "type": "color"
+        },
+        "4": {
+          "value": "{color.dark.gray.4}",
+          "type": "color"
+        },
+        "5": {
+          "value": "{color.dark.gray.5}",
+          "type": "color"
+        },
+        "6": {
+          "value": "{color.dark.gray.6}",
+          "type": "color"
+        },
+        "7": {
+          "value": "{color.dark.gray.7}",
+          "type": "color"
+        },
+        "8": {
+          "value": "{color.dark.gray.8}",
+          "type": "color"
+        },
+        "9": {
+          "value": "{color.dark.gray.9}",
+          "type": "color"
+        },
+        "10": {
+          "value": "{color.dark.gray.10}",
+          "type": "color"
+        },
+        "11": {
+          "value": "{color.dark.gray.11}",
+          "type": "color"
+        },
+        "12": {
+          "value": "{color.dark.gray.12}",
+          "type": "color"
+        },
+        "13": {
+          "value": "{color.dark.gray.13}",
+          "type": "color"
+        }
+      },
+      "alert": {
+        "1": {
+          "value": "{color.dark.red.1}",
+          "type": "color"
+        },
+        "2": {
+          "value": "{color.dark.red.2}",
+          "type": "color"
+        },
+        "3": {
+          "value": "{color.dark.red.3}",
+          "type": "color"
+        },
+        "4": {
+          "value": "{color.dark.red.4}",
+          "type": "color"
+        },
+        "5": {
+          "value": "{color.dark.red.5}",
+          "type": "color"
+        },
+        "6": {
+          "value": "{color.dark.red.6}",
+          "type": "color"
+        },
+        "7": {
+          "value": "{color.dark.red.7}",
+          "type": "color"
+        },
+        "8": {
+          "value": "{color.dark.red.8}",
+          "type": "color"
+        },
+        "9": {
+          "value": "{color.dark.red.9}",
+          "type": "color"
+        },
+        "10": {
+          "value": "{color.dark.red.10}",
+          "type": "color"
+        },
+        "11": {
+          "value": "{color.dark.red.11}",
+          "type": "color"
+        },
+        "12": {
+          "value": "{color.dark.red.12}",
+          "type": "color"
+        },
+        "13": {
+          "value": "{color.dark.red.13}",
+          "type": "color"
+        }
+      },
+      "brand": {
+        "1": {
+          "value": "{color.dark.blue.1}",
+          "type": "color"
+        },
+        "2": {
+          "value": "{color.dark.blue.2}",
+          "type": "color"
+        },
+        "3": {
+          "value": "{color.dark.blue.3}",
+          "type": "color"
+        },
+        "4": {
+          "value": "{color.dark.blue.4}",
+          "type": "color"
+        },
+        "5": {
+          "value": "{color.dark.blue.5}",
+          "type": "color"
+        },
+        "6": {
+          "value": "{color.dark.blue.6}",
+          "type": "color"
+        },
+        "7": {
+          "value": "{color.dark.blue.7}",
+          "type": "color"
+        },
+        "8": {
+          "value": "{color.dark.blue.8}",
+          "type": "color"
+        },
+        "9": {
+          "value": "{color.dark.blue.9}",
+          "type": "color"
+        },
+        "10": {
+          "value": "{color.dark.blue.10}",
+          "type": "color"
+        },
+        "11": {
+          "value": "{color.dark.blue.11}",
+          "type": "color"
+        },
+        "12": {
+          "value": "{color.dark.blue.12}",
+          "type": "color"
+        },
+        "13": {
+          "value": "{color.dark.blue.13}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}

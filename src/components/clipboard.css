@@ -1,0 +1,52 @@
+@layer components {
+  .clipboard [data-scope="clipboard"][data-part="root"] {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-ui);
+    padding: var(--padding-ui);
+  }
+
+  .clipboard [data-scope="clipboard"][data-part="label"] {
+    font-size: var(--font-size);
+  }
+
+  .clipboard [data-scope="clipboard"][data-part="control"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--gap-ui);
+  }
+
+  .clipboard [data-scope="clipboard"][data-part="input"] {
+    height: var(--height-ui); 
+    padding: var(--padding-ui); 
+    background-color: var(--color-ui); 
+    color: var(--color-ui-contrast);
+    border-radius: var(--border-radius);
+    border-width: var(--border-width);
+    border-color: var(--border-color);
+  }
+
+  .clipboard [data-scope="clipboard"][data-part="input"]:focus-visible {
+    outline: none;
+    box-shadow:
+      inset 0 0 0 1px var(--color-ui-contrast-1);
+  }
+
+  .clipboard [data-scope="clipboard"][data-part="trigger"] #clipboard-copied {
+    display: none;
+  }
+
+  .clipboard [data-scope="clipboard"][data-part="trigger"][data-copied] #clipboard-copied {
+    display: inline-block;
+  }
+  .clipboard [data-scope="clipboard"][data-part="trigger"] #clipboard-copy {
+    display: inline-block;
+  }
+
+  .clipboard [data-scope="clipboard"][data-part="trigger"][data-copied] #clipboard-copy {
+    display: none;
+  }
+
+
+}

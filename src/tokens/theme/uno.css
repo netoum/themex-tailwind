@@ -1,0 +1,29 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+[data-theme=uno] {
+  --theme-font-family: var(--font-noto-serif);
+  --theme-font-family-code: var(--font-monospace-code);
+  --theme-font-size: var(--font-size-4);
+  --theme-font-size-sm: var(--font-size-3);
+  --theme-font-size-lg: var(--font-size-5);
+  --theme-font-size-xl: var(--font-size-6);
+  --theme-font-line-height: var(--font-line-height-5);
+  --theme-border-radius: var(--border-radius-0);
+  --theme-border-width: var(--border-width-1);
+  --theme-height-ui: var(--size-14);
+  --theme-height-ui-sm: var(--size-13);
+  --theme-height-ui-lg: var(--size-15);
+  --theme-height-ui-xl: var(--size-16);
+  --theme-padding-ui: var(--size-6);
+  --theme-padding-ui-sm: var(--size-4);
+  --theme-padding-ui-lg: var(--size-6);
+  --theme-padding-ui-xl: var(--size-7);
+  --theme-margin-ui: var(--size-9);
+  --theme-gap-ui: var(--size-6);
+  --theme-gap-ui-sm: var(--size-5);
+  --theme-gap-ui-lg: var(--size-7);
+  --theme-gap-ui-xl: var(--size-8);
+  --theme-border-color: var(--color-brand-6);
+}

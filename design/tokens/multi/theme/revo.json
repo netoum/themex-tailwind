@@ -1,0 +1,128 @@
+{
+  "theme": {
+    "font": {
+      "family": {
+        "default": {
+          "value": "{font.karla}",
+          "type": "fontFamily"
+        },
+        "code": {
+          "value": "{font.monospace-code}",
+          "type": "fontFamily"
+        }
+      },
+      "size": {
+        "default": {
+          "value": "{font.size.4}",
+          "type": "fontSize"
+        },
+        "sm": {
+          "value": "{font.size.3}",
+          "type": "fontSize"
+        },
+        "lg": {
+          "value": "{font.size.6}",
+          "type": "fontSize"
+        },
+        "xl": {
+          "value": "{font.size.7}",
+          "type": "fontSize"
+        }
+      },
+      "line-height": {
+        "default": {
+          "value": "{font.line-height.3}",
+          "type": "lineHeight"
+        }
+      }
+    },
+    "border": {
+      "radius": {
+        "default": {
+          "value": "{border.radius.5}",
+          "type": "borderRadius"
+        }
+      },
+      "width": {
+        "default": {
+          "value": "{border.width.1}",
+          "type": "borderWidth"
+        }
+      },
+      "color": {
+        "default": {
+          "value": "{color.base.6}",
+          "type": "color"
+        }
+      }
+    },
+    "height": {
+      "ui": {
+        "default": {
+          "value": "{size.13}",
+          "type": "sizing"
+        },
+        "sm": {
+          "value": "{size.11}",
+          "type": "sizing"
+        },
+        "lg": {
+          "value": "{size.15}",
+          "type": "sizing"
+        },
+        "xl": {
+          "value": "{size.17}",
+          "type": "sizing"
+        }
+      }
+    },
+    "padding": {
+      "ui": {
+        "default": {
+          "value": "{size.5}",
+          "type": "sizing"
+        },
+        "sm": {
+          "value": "{size.4}",
+          "type": "sizing"
+        },
+        "lg": {
+          "value": "{size.6}",
+          "type": "sizing"
+        },
+        "xl": {
+          "value": "{size.7}",
+          "type": "sizing"
+        }
+      }
+    },
+    "margin": {
+      "ui": {
+        "default": {
+          "value": "{size.9}",
+          "type": "sizing"
+        }
+      }
+    },
+    "gap": {
+      "ui": {
+        "default": {
+          "value": "{size.7}",
+          "type": "sizing"
+        },
+        "sm": {
+          "value": "{size.6}",
+          "type": "sizing"
+        },
+        "lg": {
+          "value": "{size.8}",
+          "type": "sizing"
+        },
+        "xl": {
+          "value": "{size.9}",
+          "type": "sizing"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@theme inline {
+  --font-line-height: var(--theme-font-line-height);
+  --font-size: var(--theme-font-size);
+  --font-size-sm: var(--theme-font-size-sm);
+  --font-size-lg: var(--theme-font-size-lg);
+  --font-size-xl: var(--theme-font-size-xl);
+  --font-family: var(--theme-font-family);
+  --font-family-code: var(--theme-font-family-code);
+}
