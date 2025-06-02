@@ -1,6 +1,6 @@
 {
   "name": "@netoum/themex-tailwind",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The Corex Themex template for Tailwind. Provides global design tokens and Corex component styles.",
   "license": "MIT",
   "type": "module",
@@ -18,10 +18,7 @@
     "./tokens/global/*.css": {
       "default": "./dist/tokens/global/*.css"
     },
-    "./tokens/global/*.min.css": {
-      "default": "./dist/tokens/global/*.min.css"
-    },
-
+    
     "./tokens/semantic/*.css": {
       "default": "./dist/tokens/semantic/*.css"
     },
@@ -32,15 +29,9 @@
     "./tokens/theme/*.css": {
       "default": "./dist/tokens/theme/*.css"
     },
-    "./tokens/theme/*.min.css": {
-      "default": "./dist/tokens/theme/*.min.css"
-    },
 
     "./components/*.css": {
       "default": "./dist/components/*.css"
-    },
-    "./components/*.min.css": {
-      "default": "./dist/components/*.min.css"
     }
   },
   "repository": {
