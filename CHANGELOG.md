@@ -1,5 +1,20 @@
 # 📦 Changelog – @netoum/corex-css
 
+## [0.0.3] – 2025-06-05
+
+### ✨ Added
+
+- Implementations of the following components:
+  - Code
+  - Date Picker
+  - Scrollbar
+  - Timer
+  - Typo
+  
+- Fix Line Height semantic tokens
+- Fix components sizing
+  
+  
 ## [0.0.1] – 2025-06-01
 
 🎉 Initial release of Themex Tailwind!
