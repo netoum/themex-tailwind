@@ -30,7 +30,7 @@
   .link::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
     width: 80%;
     height: 1px;
     background-color: currentColor;
@@ -61,25 +61,21 @@
 
   .link--sm {
     font-size: var(--font-size-sm);
-    padding: var(--padding-ui-sm);
     gap: var(--gap-ui-sm);
   }
 
   .link--md {
     font-size: var(--font-size);
-    padding: var(--padding-ui);
     gap: var(--gap-ui);
   }
 
   .link--lg {
     font-size: var(--font-size-lg);
-    padding: var(--padding-ui-lg);
     gap: var(--gap-ui-lg);
   }
 
   .link--xl {
     font-size: var(--font-size-xl);
-    padding: var(--padding-ui-xl);
     gap: var(--gap-ui-xl);
   }
 
