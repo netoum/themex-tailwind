@@ -1,6 +1,6 @@
 {
   "name": "@netoum/themex-tailwind",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The Corex Themex template for Tailwind. Provides global design tokens and Corex component styles.",
   "license": "MIT",
   "type": "module",
