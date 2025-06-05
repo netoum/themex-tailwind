@@ -43,6 +43,7 @@
     color: var(--color-ui-contrast);
     border-width: var(--border-width);
     border-color: var(--border-color);
+    border-style: solid;
     height: var(--height-ui);
     padding: var(--padding-ui);
     gap: var(--gap-ui);

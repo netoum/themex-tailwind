@@ -9,7 +9,7 @@
     color: inherit;
     height: inherit;
     font-size: inherit;
-    padding-block-end: var(--padding-ui);
+    padding-inline: var(--padding-ui-sm);
     gap: var(--gap-ui);
     transition: background-color 0.2s;
   }
@@ -21,7 +21,7 @@
   }
 
   .link:disabled,
-  .link[data-disabled]  {
+  .link[data-disabled] {
     opacity: 0.6;
     pointer-events: none;
     box-shadow: none;
@@ -30,7 +30,7 @@
   .link::after {
     content: "";
     position: absolute;
-    bottom: 20%;
+    bottom: 0;
     width: 80%;
     height: 1px;
     background-color: currentColor;
@@ -78,7 +78,6 @@
   }
 
   .link--xl {
-    /* height: var(--height-ui-xl); */
     font-size: var(--font-size-xl);
     padding: var(--padding-ui-xl);
     gap: var(--gap-ui-xl);
@@ -89,10 +88,10 @@
   }
 
   .link--font-brand {
-    color: var(--color-contrast-brand);
+    color: var(--color-contrast-brand-2);
   }
 
   .link--font-alert {
-    color: var(--color-contrast-alert);
+    color: var(--color-contrast-alert-2);
   }
 }

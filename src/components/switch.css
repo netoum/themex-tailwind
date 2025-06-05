@@ -1,4 +1,8 @@
 @layer components {
+  .switch {
+    --switch-ratio: 0.5;
+  }
+
   .switch [data-scope="switch"][data-part="root"] {
     display: flex;
     align-items: center;
@@ -7,8 +11,8 @@
     gap: var(--gap-ui);
     --switch-track-diff: calc(var(--switch-track-width) - var(--switch-track-height));
     --switch-thumb-x: var(--switch-track-diff);
-    --switch-track-width: calc(var(--height-ui) * 1.6);
-    --switch-track-height: calc(var(--height-ui) * 0.8);
+    --switch-track-width: calc(calc(var(--height-ui) * var(--switch-ratio)) * 1.6);
+    --switch-track-height: calc(calc(var(--height-ui) * var(--switch-ratio)) * 0.8);
   }
 
   .switch [data-scope="switch"][data-part="control"] {
@@ -100,22 +104,22 @@
   }
 
   .switch--sm [data-scope="switch"][data-part="control"] {
-    --switch-track-width: calc(var(--height-ui-sm) * 1.6);
-    --switch-track-height: calc(var(--height-ui-sm) * 0.8);
+    --switch-track-width: calc(calc(var(--height-ui-sm) * var(--switch-ratio)) * 1.6);
+    --switch-track-height: calc(calc(var(--height-ui-sm) * var(--switch-ratio)) * 0.8);
     --switch-track-diff: calc(var(--switch-track-width) - var(--switch-track-height));
     --switch-thumb-x: var(--switch-track-diff);
   }
 
   .switch--lg [data-scope="switch"][data-part="control"] {
-    --switch-track-width: calc(var(--height-ui-lg) * 1.6);
-    --switch-track-height: calc(var(--height-ui-lg) * 0.8);
+    --switch-track-width: calc(calc(var(--height-ui-lg) * var(--switch-ratio)) * 1.6);
+    --switch-track-height: calc(calc(var(--height-ui-lg) * var(--switch-ratio)) * 0.8);
     --switch-track-diff: calc(var(--switch-track-width) - var(--switch-track-height));
     --switch-thumb-x: var(--switch-track-diff);
   }
 
   .switch--xl [data-scope="switch"][data-part="control"] {
-    --switch-track-width: calc(var(--height-ui-xl) * 1.6);
-    --switch-track-height: calc(var(--height-ui-xl) * 0.8);
+    --switch-track-width: calc(calc(var(--height-ui-xl) * var(--switch-ratio)) * 1.6);
+    --switch-track-height: calc(calc(var(--height-ui-xl) * var(--switch-ratio)) * 0.8);
     --switch-track-diff: calc(var(--switch-track-width) - var(--switch-track-height));
     --switch-thumb-x: var(--switch-track-diff);
   }

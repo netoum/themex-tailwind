@@ -18,12 +18,17 @@
     box-shadow: none;
   }
 
+  .collapsible [data-part="root"]:not([data-state="open"]):not([data-state="closed"]) [data-part="content"] {
+    display: none;
+  }
+
   .collapsible [data-scope="collapsible"][data-part="content"] {
     background-color: var(--color-layer-2);
     color: var(--color-contrast);
     border-radius: var(--border-radius);
     border-width: var(--border-width);
     border-color: var(--border-color);
+    border-style: solid;
     padding: var(--padding-ui);
     gap: var(--gap-ui);
     margin-block: var(--margin-ui);
@@ -37,7 +42,11 @@
     animation: slideUp 200ms ease;
   }
 
-  .collapsible [data-scope="collapsible"][data-part="trigger"][data-state="open"] .trigger__open {
+  .collapsible [data-part="trigger"] .trigger__closed {
+    display: none;
+  }
+
+  .collapsible [data-part="trigger"] .trigger__open {
     display: none;
   }
 
@@ -49,11 +58,20 @@
     display: inline-flex;
   }
 
-  [data-scope="collapsible"][data-part="trigger"][data-state="closed"] .trigger__closed {
+  .collapsible [data-scope="collapsible"][data-part="trigger"][data-state="closed"] .trigger__closed {
     display: none;
   }
 
-  [data-scope="collapsible"][data-part="indicator"][data-state="open"] {
+  .collapsible [data-scope="collapsible"][data-part="indicator"] {
+    height: 1em;
+    width: 1em;
+    display: inline-flex;
+    align-self: center;
+    color: currentColor;
+    flex-shrink: 0;
+  }
+
+  .collapsible [data-scope="collapsible"][data-part="indicator"][data-state="open"] {
     transform: rotate(90deg);
   }
 

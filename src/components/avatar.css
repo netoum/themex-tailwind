@@ -71,17 +71,17 @@
   }
 
   .avatar--sm [data-scope="avatar"][data-part="root"] {
-    height: calc(var(--height-ui) * var(--ratio-sm));
-    font-size: calc(var(--font-size) * var(--ratio-sm));
+    height: var(--height-ui-sm);
+    font-size: var(--font-size-sm);
   }
 
   .avatar--lg [data-scope="avatar"][data-part="root"] {
-    height: calc(var(--height-ui) * var(--ratio-lg));
-    font-size: calc(var(--font-size) * var(--ratio-lg));
+    height: var(--height-ui-lg);
+    font-size: var(--font-size-lg);
   }
 
   .avatar--xl [data-scope="avatar"][data-part="root"] {
-    height: calc(var(--height-ui) * var(--ratio-xl));
-    font-size: calc(var(--font-size) * var(--ratio-xl));
+    height: var(--height-ui-xl);
+    font-size: var(--font-size-xl);
   }
 }

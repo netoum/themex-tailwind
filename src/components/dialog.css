@@ -20,6 +20,14 @@
     justify-content: center;
   }
 
+  .dialog [data-part="content"] {
+    display: none;
+  }
+
+  .dialog [data-scope="dialog"][data-part="content"][data-state="open"] {
+    display: block;
+  }
+
   .dialog [data-scope="dialog"][data-part="content"] {
     z-index: 50;
     position: relative;
@@ -28,8 +36,10 @@
     border-radius: var(--border-radius);
     border-width: var(--border-width);
     border-color: var(--border-color);
+    border-style: solid;
     padding: var(--padding-ui);
     gap: var(--gap-ui);
+    margin: var(--margin-ui);
   }
 
   .dialog [data-scope="dialog"][data-part="content"] {
