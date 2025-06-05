@@ -18,13 +18,14 @@
   }
 
   .clipboard [data-scope="clipboard"][data-part="input"] {
-    height: var(--height-ui); 
-    padding: var(--padding-ui); 
-    background-color: var(--color-ui); 
+    height: var(--height-ui);
+    padding: var(--padding-ui);
+    background-color: var(--color-ui);
     color: var(--color-ui-contrast);
     border-radius: var(--border-radius);
     border-width: var(--border-width);
     border-color: var(--border-color);
+    border-style: solid;
   }
 
   .clipboard [data-scope="clipboard"][data-part="input"]:focus-visible {
@@ -40,6 +41,7 @@
   .clipboard [data-scope="clipboard"][data-part="trigger"][data-copied] #clipboard-copied {
     display: inline-block;
   }
+
   .clipboard [data-scope="clipboard"][data-part="trigger"] #clipboard-copy {
     display: inline-block;
   }
@@ -47,6 +49,4 @@
   .clipboard [data-scope="clipboard"][data-part="trigger"][data-copied] #clipboard-copy {
     display: none;
   }
-
-
 }

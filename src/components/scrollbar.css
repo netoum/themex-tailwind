@@ -1,0 +1,105 @@
+@layer components {
+  .scrollbar {
+    --scrollbar-ratio: 0.2;
+    --scrollbar-size: calc(var(--height-ui) * var(--scrollbar-ratio));
+
+    &::-webkit-scrollbar {
+      width: var(--scrollbar-size);
+      height: var(--scrollbar-size);
+    }
+
+    &::-webkit-scrollbar-corner {
+      background: var(--color-ui-2);
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: var(--color-ui);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-ui-2);
+    }
+  }
+
+  .scrollbar--sm {
+    --scrollbar-size: calc(var(--height-ui-sm) * var(--scrollbar-ratio));
+  }
+
+  .scrollbar--lg {
+    --scrollbar-size: calc(var(--height-ui-lg) * var(--scrollbar-ratio));
+  }
+
+  .scrollbar--xl {
+    --scrollbar-size: calc(var(--height-ui-xl) * var(--scrollbar-ratio));
+  }
+
+  .scrollbar--brand {
+    &::-webkit-scrollbar-track {
+      background-color: var(--color-ui-brand);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-ui-brand-2);
+    }
+
+    &::-webkit-scrollbar-corner {
+      background: var(--color-ui-brand-2);
+    }
+  }
+
+  .scrollbar--alert {
+    &::-webkit-scrollbar-track {
+      background-color: var(--color-ui-alert);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-ui-alert-2);
+    }
+
+    &::-webkit-scrollbar-corner {
+      background: var(--color-ui-alert-2);
+    }
+  }
+
+  .scrollbar--accent {
+    &::-webkit-scrollbar-track {
+      background-color: var(--color-ui);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-accent);
+    }
+
+    &::-webkit-scrollbar-corner {
+      background: var(--color-accent);
+    }
+  }
+
+  .scrollbar--accent.scrollbar--brand {
+    &::-webkit-scrollbar-track {
+      background-color: var(--color-ui-brand);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-accent-brand);
+    }
+
+    &::-webkit-scrollbar-corner {
+      background: var(--color-accent-brand);
+    }
+  }
+
+  .scrollbar--accent.scrollbar--alert {
+    &::-webkit-scrollbar-track {
+      background-color: var(--color-ui-alert);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-accent-alert);
+    }
+
+    &::-webkit-scrollbar-corner {
+      background: var(--color-accent-alert);
+    }
+  }
+}

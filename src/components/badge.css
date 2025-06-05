@@ -1,5 +1,9 @@
 @layer components {
   .badge {
+    --badge-ratio: 0.8;
+  }
+
+  .badge {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -8,10 +12,10 @@
     background-color: var(--color-ui);
     color: var(--color-ui-contrast);
     border-radius: var(--border-radius);
-    height: var(--height-ui);
-    padding: var(--padding-ui);
-    gap: var(--gap-ui);
-    font-size: var(--font-size);
+    height: calc(var(--height-ui) * var(--badge-ratio));
+    padding: calc(var(--padding-ui) * var(--badge-ratio));
+    gap: calc(var(--gap-ui) * var(--badge-ratio));
+    font-size: calc(var(--font-size) * var(--badge-ratio));
     transition: background-color 0.2s;
   }
 
@@ -43,24 +47,24 @@
   }
 
   .badge--sm {
-    height: var(--height-ui-sm);
-    font-size: var(--font-size-sm);
-    padding: var(--padding-ui-sm);
-    gap: var(--gap-ui-sm);
+    height: calc(var(--height-ui-sm) * var(--badge-ratio));
+    font-size: calc(var(--font-size-sm) * var(--badge-ratio));
+    padding: calc(var(--padding-ui-sm) * var(--badge-ratio));
+    gap: calc(var(--gap-ui-sm) * var(--badge-ratio));
   }
 
   .badge--lg {
-    height: var(--height-ui-lg);
-    font-size: var(--font-size-lg);
-    padding: var(--padding-ui-lg);
-    gap: var(--gap-ui-lg);
+    height: calc(var(--height-ui-lg) * var(--badge-ratio));
+    font-size: calc(var(--font-size-lg) * var(--badge-ratio));
+    padding: calc(var(--padding-ui-lg) * var(--badge-ratio));
+    gap: calc(var(--gap-ui-lg) * var(--badge-ratio));
   }
 
   .badge--xl {
-    height: var(--height-ui-xl);
-    font-size: var(--font-size-xl);
-    padding: var(--padding-ui-xl);
-    gap: var(--gap-ui-xl);
+    height: calc(var(--height-ui-xl) * var(--badge-ratio));
+    font-size: calc(var(--font-size-xl) * var(--badge-ratio));
+    padding: calc(var(--padding-ui-xl) * var(--badge-ratio));
+    gap: calc(var(--gap-ui-xl) * var(--badge-ratio));
   }
 
   .badge--brand {
