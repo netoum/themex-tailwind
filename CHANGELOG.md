@@ -1,5 +1,17 @@
 # 📦 Changelog – @netoum/corex-css
 
+## [0.0.4] – 2025-06-11
+
+### ✨ Added
+
+- Implementations of the following components:
+  - Combobox
+  - Site Search
+  - Date Picker Range
+  
+- Fix Dialog
+- Remove unused Ratio tokens
+  
 ## [0.0.3] – 2025-06-05
 
 ### ✨ Added

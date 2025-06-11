@@ -43,7 +43,7 @@ npm install @netoum/themex-tailwind
 ```
 
 ### Theme and Mode data attributes
-You must then add of the the theme and mode data attribute
+You must then add of the theme and mode data attribute
 
 - data-theme="neo" data-mode="light"
 - data-theme="neo" data-mode="dark"

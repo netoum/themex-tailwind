@@ -1,21 +1,21 @@
 {
   "border": {
+    "color": {
+      "default": {
+        "type": "color",
+        "value": "{theme.border.color.default}"
+      }
+    },
     "radius": {
       "default": {
-        "value": "{theme.border.radius.default}",
-        "type": "borderRadius"
+        "type": "borderRadius",
+        "value": "{theme.border.radius.default}"
       }
     },
     "width": {
       "default": {
-        "value": "{theme.border.width.default}",
-        "type": "borderWidth"
-      }
-    },
-    "color": {
-      "default": {
-        "value": "{theme.border.color.default}",
-        "type": "color"
+        "type": "borderWidth",
+        "value": "{theme.border.width.default}"
       }
     }
   }

@@ -1,126 +1,126 @@
 {
   "theme": {
-    "font": {
-      "family": {
-        "default": {
-          "value": "{font.noto-serif}",
-          "type": "fontFamily"
-        },
-        "code": {
-          "value": "{font.monospace-code}",
-          "type": "fontFamily"
-        }
-      },
-      "size": {
-        "default": {
-          "value": "{font.size.4}",
-          "type": "fontSize"
-        },
-        "sm": {
-          "value": "{font.size.3}",
-          "type": "fontSize"
-        },
-        "lg": {
-          "value": "{font.size.5}",
-          "type": "fontSize"
-        },
-        "xl": {
-          "value": "{font.size.6}",
-          "type": "fontSize"
-        }
-      },
-      "line-height": {
-        "default": {
-          "value": "{font.line-height.8}",
-          "type": "lineHeight"
-        }
-      }
-    },
     "border": {
+      "color": {
+        "default": {
+          "type": "color",
+          "value": "{color.brand.6}"
+        }
+      },
       "radius": {
         "default": {
-          "value": "{border.radius.0}",
-          "type": "borderRadius"
+          "type": "borderRadius",
+          "value": "{border.radius.0}"
         }
       },
       "width": {
         "default": {
-          "value": "{border.width.1}",
-          "type": "borderWidth"
+          "type": "borderWidth",
+          "value": "{border.width.1}"
+        }
+      }
+    },
+    "font": {
+      "family": {
+        "code": {
+          "type": "fontFamily",
+          "value": "{font.monospace-code}"
+        },
+        "default": {
+          "type": "fontFamily",
+          "value": "{font.noto-serif}"
         }
       },
-      "color": {
+      "line-height": {
         "default": {
-          "value": "{color.brand.6}",
-          "type": "color"
+          "type": "lineHeight",
+          "value": "{font.line-height.8}"
         }
-      }
-    },
-    "height": {
-      "ui": {
+      },
+      "size": {
         "default": {
-          "value": "{size.14}",
-          "type": "sizing"
-        },
-        "sm": {
-          "value": "{size.13}",
-          "type": "sizing"
+          "type": "fontSize",
+          "value": "{font.size.4}"
         },
         "lg": {
-          "value": "{size.15}",
-          "type": "sizing"
-        },
-        "xl": {
-          "value": "{size.16}",
-          "type": "sizing"
-        }
-      }
-    },
-    "padding": {
-      "ui": {
-        "default": {
-          "value": "{size.6}",
-          "type": "sizing"
+          "type": "fontSize",
+          "value": "{font.size.5}"
         },
         "sm": {
-          "value": "{size.4}",
-          "type": "sizing"
-        },
-        "lg": {
-          "value": "{size.6}",
-          "type": "sizing"
+          "type": "fontSize",
+          "value": "{font.size.3}"
         },
         "xl": {
-          "value": "{size.7}",
-          "type": "sizing"
-        }
-      }
-    },
-    "margin": {
-      "ui": {
-        "default": {
-          "value": "{size.9}",
-          "type": "sizing"
+          "type": "fontSize",
+          "value": "{font.size.6}"
         }
       }
     },
     "gap": {
       "ui": {
         "default": {
-          "value": "{size.6}",
-          "type": "sizing"
-        },
-        "sm": {
-          "value": "{size.5}",
-          "type": "sizing"
+          "type": "sizing",
+          "value": "{size.6}"
         },
         "lg": {
-          "value": "{size.7}",
-          "type": "sizing"
+          "type": "sizing",
+          "value": "{size.7}"
+        },
+        "sm": {
+          "type": "sizing",
+          "value": "{size.5}"
         },
         "xl": {
-          "value": "{size.8}",
-          "type": "sizing"
+          "type": "sizing",
+          "value": "{size.8}"
+        }
+      }
+    },
+    "height": {
+      "ui": {
+        "default": {
+          "type": "sizing",
+          "value": "{size.14}"
+        },
+        "lg": {
+          "type": "sizing",
+          "value": "{size.15}"
+        },
+        "sm": {
+          "type": "sizing",
+          "value": "{size.13}"
+        },
+        "xl": {
+          "type": "sizing",
+          "value": "{size.16}"
+        }
+      }
+    },
+    "margin": {
+      "ui": {
+        "default": {
+          "type": "sizing",
+          "value": "{size.9}"
+        }
+      }
+    },
+    "padding": {
+      "ui": {
+        "default": {
+          "type": "sizing",
+          "value": "{size.6}"
+        },
+        "lg": {
+          "type": "sizing",
+          "value": "{size.6}"
+        },
+        "sm": {
+          "type": "sizing",
+          "value": "{size.4}"
+        },
+        "xl": {
+          "type": "sizing",
+          "value": "{size.7}"
         }
       }
     }
