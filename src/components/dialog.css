@@ -20,7 +20,7 @@
     justify-content: center;
   }
 
-  .dialog [data-part="content"] {
+  .dialog [data-scope="dialog"][data-part="content"] {
     display: none;
   }
 
